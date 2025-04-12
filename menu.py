@@ -26,13 +26,12 @@ def menu():
     		print("# - walls\n@ is you and others entity\n= is chest, ? is loot.\n to grab loot - stay on loot and press g.\n/ - your weapon\n* - magic effects\nu , . - decorates\n")
     return input("enter your name to start a quest!\n")
 #generate world==================
-def generate(atk_layer):
+def generate():
     world=[]
     for i in range(128):
     	world.append([])
-    	atk_layer.append([])
+    	
     	for j in range(128):
-    		atk_layer[i].append(0)
     		r=int(random()*100)%3
     		world[i].append(".")
     #borders
